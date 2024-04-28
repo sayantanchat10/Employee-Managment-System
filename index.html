@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Management System</title>
+  <!-- CSS styles -->
+  <style>
+    /* Table styles */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* Dropdown styles */
+    select {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HTML code to generate the Employee Management System -->
+  <h1>Employee Management System</h1>
+  <label for="department-dropdown">Filter by Department:</label>
+  <select id="department-dropdown">
+    <option value="">-- Select Department --</option>
+    <option value="hr">HR</option>
+    <option value="finance">Finance</option>
+    <option value="marketing">Marketing</option>
+    <option value="engineering">Engineering</option>
+    <option value="operations">Operations</option>
+  </select>
+
+  <label for="gender-dropdown">Filter by Gender:</label>
+  <select id="gender-dropdown">
+    <option value="">-- Select Gender --</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+
+  <select id="salarySort">
+    <option value="">-- Select Order --</option>
+    <option value="asc">Low to High</option>
+    <option value="desc">High to Low</option>
+  </select>
+  
+  <!-- Table to display employee data -->
+  <table id="employee-table">
+    <thead>
+      <tr>
+        <th>S.no</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Department</th>
+        <th>Salary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Employee data rows will be dynamically populated here -->
+    </tbody>
+  </table>
+
+  <!-- JavaScript code -->
+  <script src="deptandgender.js"></script>
+</body>
+
+</html>
